@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/round_border"
+    android:backgroundTint="#202020">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="#00A0E9"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="New alarm"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textColor="#00A0E9"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ring in..."
+            android:textColor="#888888"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_border"
+            android:theme="@style/TimePickerTheme" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnRingOnce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ring once"
+                android:backgroundTint="#303030"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom"
+                android:backgroundTint="#303030"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/customDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:background="@drawable/round_border"
+            android:layout_marginBottom="16dp">
+
+
+            <Button
+                android:id="@+id/btSun"
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:backgroundTint="#303030"
+                android:padding="0dp"
+                android:text="S"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/btMon"
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:backgroundTint="#303030"
+                android:text="M"
+                android:padding="0dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:buttonTint="#00A0E9" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/btTue"
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:backgroundTint="#303030"
+                android:text="T"
+                android:padding="0dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:buttonTint="#00A0E9" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/btWed"
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:backgroundTint="#303030"
+                android:text="W"
+                android:padding="0dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:buttonTint="#00A0E9" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/btThu"
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:backgroundTint="#303030"
+                android:text="T"
+                android:padding="0dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:buttonTint="#00A0E9" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/btFri"
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:backgroundTint="#303030"
+                android:text="F"
+                android:padding="0dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:buttonTint="#00A0E9" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/btSat"
+                android:layout_width="30dp"
+                android:layout_height="38dp"
+                android:backgroundTint="#303030"
+                android:text="S"
+                android:padding="0dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:buttonTint="#00A0E9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/round_border">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/etAlarmName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alarm name"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#888888"
+                    android:background="@android:color/transparent"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ringtone"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRingtone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:text="None"
+                    android:textColor="#00A0E9"
+                    android:textSize="16sp" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vibrate"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/switchVibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumbTint="#00A0E9"
+                    android:trackTint="#555555" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
